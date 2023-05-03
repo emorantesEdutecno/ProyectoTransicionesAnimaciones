@@ -1,0 +1,102 @@
+
+@keyframes desplazar{
+    0%{
+        margin: 0;
+    }
+    25%{
+        margin-left: 100px;
+    }
+    50%{
+        margin-top: 100px;
+    }
+    75%{
+        margin-left: 0;
+    }
+    100%{
+        margin-top:  0;
+    }
+
+}
+
+
+@keyframes desplazarPerro{
+    0%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: 100px;
+    }
+    50%{
+        margin-left: 300px;
+    }
+    75%{
+        margin-left: 500px;
+    }
+    100%{
+
+        margin-left: 0;
+    }
+
+}
+
+@keyframes desplazarGato{
+    0%{
+        margin-left: 0;
+    }
+    25%{
+        margin-left: 50px;
+    }
+    50%{
+        margin-left: -20px;
+    }
+    75%{
+        margin-left: 85px;
+    }
+    100%{
+
+        margin-left: 0;
+    }
+
+}
+
+.cuadrado{
+    width: 200px;
+    height: 200px;
+    background-color: blueviolet;
+    animation: desplazar 3s ease-in-out 2;
+}
+
+.superior{
+    display:flex;
+    flex-direction: row;
+}
+
+#fondoNube{
+    width: 100%;
+    height: 250px;
+}
+
+.inferior{
+    display: flex;
+    flex-direction: row;
+    /*
+    background-image: url('../img/pasto.gif');
+    background-repeat: no-repeat;
+    background-size: cover;
+    */
+    background-color: green;
+    
+}
+
+
+.perro{
+    animation: desplazarPerro 5s ease-in-out infinite;
+}
+
+.gato{
+    animation: desplazarGato 5s ease-in-out infinite;
+}
+
+#imgGato{
+    width: 25%;
+}
